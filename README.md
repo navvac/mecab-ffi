@@ -1,4 +1,8 @@
-# node-mecab-ffi
+# Notice
+Forked from ' https://github.com/xissy/node-mecab-ffi' and translated to plain javascript. 
+
+
+# node-mecab-ffi-js
 
 A node.js module for binding MeCab asynchronously using foreign function interface.
 This module supports MacOS(surely Unix/Linux) and multi-thread safety.
@@ -15,20 +19,30 @@ Refer to [here](http://www.ficksworkshop.com/blog/14-coding/65-installing-gcc-on
 
 Via [npm](https://npmjs.org):
 ```
-$ npm install mecab-ffi
+$ npm install mecab-ffi-js
 ```  
 
 Via git directly:
 ```
-$ npm install git+https://github.com/xissy/node-mecab-ffi.git
+$ npm install git+https://github.com/interpark/node-mecab-ffi-js.git
 ```
 
 ## Quick Start
 
 ### Load in the module
 
+```javascript
+var Mecab = require('mecab-ffi-js');
 ```
-var mecab = require('mecab-ffi');
+
+You can initiate instance with default dictionary path
+```javascript
+mecab = new Mecab() // default dictionary path: /usr/local/lib/mecab/dic/mecab-ko-dic
+```
+
+Or you can set dictionary path
+```javascript
+mecab = new Mecab('usr/local/lib/mecab/dic/mecab-ko-dic')
 ```
 
 ### Parse a string
