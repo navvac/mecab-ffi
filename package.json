@@ -1,15 +1,15 @@
 {
-  "name": "mecab-ffi-js",
-  "version": "0.2.0",
+  "name": "mecab-ffi",
+  "version": "0.2.2",
   "author": {
     "name": "Interpark NCL",
     "email": "minha7890@interpark.com"
   },
   "main": "./index",
   "dependencies": {
-    "async": ">= 0.2.9",
-    "ffi": ">= 1.2.5",
-    "ref": ">= 0.1.3"
+    "async": "latest",
+    "ffi-napi": "navvac/ffi-napi",
+    "ref-napi": "navvac/ref-napi"
   },
   "readmeFilename": "README.md",
   "description": "A node.js module for binding MeCab asynchronously using foreign function interface.",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/interpark/node-mecab-ffi-js/issues"
   },
-  "devDependencies": {}
+  "packageManager": "yarn@3.0.2",
+  "devDependencies": {
+    "node-gyp": "^8.2.0"
+  }
 }
