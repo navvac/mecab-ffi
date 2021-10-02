@@ -27,3 +27,7 @@ sftp-config.json
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# test dictionary
+libmecab.dll
+dic/*

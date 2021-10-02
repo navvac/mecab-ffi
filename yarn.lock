@@ -506,9 +506,9 @@ ffi-napi@navvac/ffi-napi:
   languageName: node
   linkType: hard
 
-"mecab-ffi-js@workspace:.":
+"mecab-ffi@workspace:.":
   version: 0.0.0-use.local
-  resolution: "mecab-ffi-js@workspace:."
+  resolution: "mecab-ffi@workspace:."
   dependencies:
     async: latest
     ffi-napi: navvac/ffi-napi

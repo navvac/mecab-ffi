@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/interpark/node-mecab-ffi-js/issues"
   },
+  "scripts": {
+    "dev": "node ./test/test64.js"
+  },
   "packageManager": "yarn@3.0.2",
   "devDependencies": {
     "node-gyp": "^8.2.0"
